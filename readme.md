@@ -53,5 +53,18 @@ Why Tailwind?
       - space-between; very important class, puts margin in all the child elements. Very helpful in case of navbar.
       - divide-width to put border in child elements.
    - ### Square bracket notation to give custom values.
-      - 
+      - my-[67px] pd-[44rem]
+   - ### Responsiveness
+      - sm md lg 2xl xl:bg-blue-200 boom! Work done!
+      - text-base default font size.
+      - MOST IMPORTANT THING: Follow mobile-first approach. We need to think in this way. Smallest screen will use default classes, then I will keep increasing size of screen and keep on overriding my classes.
+      - class="hidden" is display: none. block to take it back.
+   - ### Hover, focus and other states:
+      - hover:bg-purple-700
+      - focus: when element is selected to receive input while active when it is activated by user. Stack overflow has beutiful answer for this.
+   - @apply directive
+   - Specificity in style.css. If we want our CSS to be fetched first then we put it before @tailwind utilites. We generally keep our CSS before @tailwind utilities. We should handle this based on our requirement.
+   - @layer components will add CSS afer component layer. We mention the layer after which we want to add our CSS.
+   - ### layering in tailwind needs more attention of mine.
+   
 
