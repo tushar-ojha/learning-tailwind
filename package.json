@@ -1,0 +1,25 @@
+{
+  "name": "learning-tailwind",
+  "version": "1.0.0",
+  "description": "- Use Play CDN to play. Won't work in production\r  - mx-4 mx-2 cursor-pointer px-4 py-4 bg-purple-900 font-sans. This is how we write classes inside elements and boom! CSS is applied. No need to remember anything. A secret extension will do this for us.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar-ojha/learning-tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar-ojha/learning-tailwind/issues"
+  },
+  "homepage": "https://github.com/tushar-ojha/learning-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "vite": "^3.1.8"
+  }
+}
