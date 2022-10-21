@@ -17,7 +17,7 @@ Why Tailwind?
  - Commands to install and run tailwind properly
     - npm init -y skips all questions and directly generates an package.json file.
     - npm install -D tailwindcss postcss autoprefixer
-    - npm install vite //to use tailwind in production.
+    - npm install vite //to open page on live server.
     - "scripts": {"start": "vite"} in package.json
     - npx tailwindcss init to generate tailwind.config.js
     - npm tailwindcss init -p to generate postcss.config.js
@@ -51,7 +51,7 @@ Why Tailwind?
    - ### Margin Borders and Padding:
       - m-0 mx-0 my-0 mt mr ml mb, negative values are also allowed.
       - space-between; very important class, puts margin in all the child elements. Very helpful in case of navbar.
-      - divide-width to put border in child elements.
+      - divide-width; to put border in child elements.
    - ### Square bracket notation to give custom values.
       - my-[67px] pd-[44rem]
    - ### Responsiveness
@@ -62,9 +62,24 @@ Why Tailwind?
    - ### Hover, focus and other states:
       - hover:bg-purple-700
       - focus: when element is selected to receive input while active when it is activated by user. Stack overflow has beutiful answer for this.
-   - @apply directive
+
+   - @apply directive. 
+      - .btn { @apply ...tailwind classes... }; giving short name, sort of variable to large lines of CSS.
+
    - Specificity in style.css. If we want our CSS to be fetched first then we put it before @tailwind utilites. We generally keep our CSS before @tailwind utilities. We should handle this based on our requirement.
-   - @layer components will add CSS afer component layer. We mention the layer after which we want to add our CSS.
+
+   - @layer components {....css classes and properties.....} will add CSS afer component layer. We mention the layer after which we want to add our CSS.
+
+   - @layer utilities  {....css classes and properties.....}; classes in this will be considered as utility classes. 
    - ### layering in tailwind needs more attention of mine.
+      - @layer directive comes with some cost, so we should use it only if it is really important. Cost is we need to go multiple times to CSS file in case of debugging.
+   - ## npx tailwindss init tushar 
+      - --full will generate a full configuration file. This will act as a reference file to edit tailwind.config.js. We can know where we have add our custom changes.
+
+   - Build breaks when we don't have relative URL.
+   - Deploying on production
+      - Inside scripts of package.json "build": "vite build" then npm run build/ output is the production build.
+
+
    
 
