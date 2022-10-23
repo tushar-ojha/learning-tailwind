@@ -20,7 +20,9 @@ Why Tailwind?
     - npm install vite //to open page on live server.
     - "scripts": {"start": "vite"} in package.json
     - npx tailwindcss init to generate tailwind.config.js
-    - npm tailwindcss init -p to generate postcss.config.js
+    - npx tailwindcss init -p to generate postcss.config.js
+    - Create input.css file, link it into HTML file.
+      - Write @tailwind base; @tailwind components; @tailwind utilities;
     - Inside tailwind.config.js * in content:[] like this: content:["*"]
     - tailwind css intellisense extension in VS code.
     - npm run start will start website on local host.
