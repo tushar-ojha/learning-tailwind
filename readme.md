@@ -11,7 +11,8 @@ Why Tailwind?
  Setup:
  - Use Play CDN to play. Won't work in production.
  - mx-4 mx-2 cursor-pointer px-4 py-4 bg-purple-900 font-sans, pt means padding top.
-  This is how we write classes inside elements and boom! CSS is applied. No need to remember anything. A secret extension will do this for us.
+   
+   This is how we write classes inside elements and boom! CSS is applied. No need to remember anything. A secret extension will do this for us.
  - Remeber to use vite instead of using live server.
 
  - Commands to install and run tailwind properly
